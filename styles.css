@@ -24,8 +24,9 @@ body {
     perspective: 1000px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    position: relative;
+    position: absolute;
     cursor: pointer; /* Add cursor pointer */
+    top: 250px
 }
 
 .card-front, .card-back {
@@ -65,7 +66,7 @@ body {
 .icon-container {
     display: flex;
     justify-content: space-between; 
-    width: 80%; 
+
     margin-top: 10px; 
 }
 
@@ -90,7 +91,7 @@ body {
 }
 
 .card-back h2 {
-    font-size: 32px; /* Smaller font size */
+    font-size: 21px; /* Smaller font size */
     font-weight: 600; /* Slightly bolder */
     margin-bottom: 10px; /* Spacing below the heading */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow for depth */
@@ -99,4 +100,9 @@ body {
 .card-back p {
     font-size: 14px; /* Adjust paragraph size if you have any */
     color: #d3d3d3; /* Light gray for contrast */
+}
+
+html, body {
+    overflow-y: hidden; /* Disables vertical scrolling */
+    height: 100%; /* Ensures full height for proper display */
 }
